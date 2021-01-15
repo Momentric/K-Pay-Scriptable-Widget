@@ -12,7 +12,7 @@ An iOS widget to pull your sales data from K-Pay
 - Finally, Add a link to your png logo on line 96
 
 # Add to homescreen
-- instructions.png contains visuals for some of these steps
+Instructions.png contains visuals for some of these steps
 
 - Add a medium sized scriptable widget to your home screen
 - Press the home button to get out of homescreen edit mode
