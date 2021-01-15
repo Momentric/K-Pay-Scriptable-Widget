@@ -21,3 +21,8 @@ Instructions.png contains visuals for some of these steps
 - For Script, select whatever you called the script
 - For When interacting, select Run Script
 - That's It! Enjoy!
+
+# Known Issues
+- Some text is not aligned properly
+- To fix this, scroll through the code an change the x & y values if needed
+- Or, if you find a way to individually align elements, let me know
