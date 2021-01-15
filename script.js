@@ -1,5 +1,5 @@
-//Function to load total income
-//Find your api key at https://kiezelpay.com/account/api and add it to the urls on lines 11, 20, & 29
+//Find your api key at https://kiezelpay.com/account/api and add it here
+const APIKEY = "Your API KEY"
 //Then find your timezone offset at https://en.wikipedia.org/wiki/List_of_UTC_time_offsets
 //Next take your offset ie: +2 and then multiply it buy 60, and then flip the symbol. (so -120)
 //Add the offset to the url on line 20, same with platform (fitbit, garmin, pebble, all)
@@ -8,7 +8,7 @@
 //You can look through the code if you want, and customize things too.
 
 async function loadData() {
-let url = "https://api.kiezelpay.com/api/merchant/summary?key=YOUR_API_KEY"
+let url = "https://api.kiezelpay.com/api/merchant/summary?key=" + "APIKEY"
 let req = new Request(url)
 let json = await req.loadJSON()
 console.log(json)
@@ -17,7 +17,7 @@ return json.totalIncome
 
 //Function to load today's total
 async function loadToday() {
-let newrl = "https://api.kiezelpay.com/api/merchant/today?offset=YOUR_OFFEST&platform=YOUR_PLATFORM&key=YOUR_API_KEY"
+let newrl = "https://api.kiezelpay.com/api/merchant/today?offset=YOUR_OFFEST&platform=YOUR_PLATFORM&key="  + "APIKEY"
 let newreq = new Request(newrl)
 let dayson = await newreq.loadJSON()
 console.log(dayson)
@@ -26,7 +26,7 @@ return dayson.amount
 
 //Function to load next payout
 async function loadPayout() {
-let twourl = "https://api.kiezelpay.com/api/merchant/summary?key=YOUR_API_KEY"
+let twourl = "https://api.kiezelpay.com/api/merchant/summary?key="  + "APIKEY"
 let payreq = new Request(twourl)
 let payjson = await payreq.loadJSON()
 console.log(payjson)
