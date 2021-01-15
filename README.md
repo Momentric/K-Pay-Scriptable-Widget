@@ -9,7 +9,7 @@ An iOS widget to pull your sales data from K-Pay
 - Then find your timezone offset at https://en.wikipedia.org/wiki/List_of_UTC_time_offsets
 - Next take your offset (ie: +2) and then multiply it buy 60, and flip the symbol. (so -120)
 - Add the offset to the url on line 20, same with platform (fitbit, garmin, pebble, all)
-- Finally, Add a link to your png logo on line 96
+- Finally, Add a link to your png logo on line 96 (252px By 152px)
 
 # Add to homescreen
 Instructions.png contains visuals for some of these steps
