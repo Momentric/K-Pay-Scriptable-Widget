@@ -8,7 +8,7 @@ const APIKEY = "Your API KEY"
 //You can look through the code if you want, and customize things too.
 
 async function loadData() {
-let url = "https://api.kiezelpay.com/api/merchant/summary?key=" + "APIKEY"
+let url = "https://api.kiezelpay.com/api/merchant/summary?key=" + APIKEY
 let req = new Request(url)
 let json = await req.loadJSON()
 console.log(json)
@@ -17,7 +17,7 @@ return json.totalIncome
 
 //Function to load today's total
 async function loadToday() {
-let newrl = "https://api.kiezelpay.com/api/merchant/today?offset=YOUR_OFFEST&platform=YOUR_PLATFORM&key="  + "APIKEY"
+let newrl = "https://api.kiezelpay.com/api/merchant/today?offset=YOUR_OFFEST&platform=YOUR_PLATFORM&key="  + APIKEY
 let newreq = new Request(newrl)
 let dayson = await newreq.loadJSON()
 console.log(dayson)
@@ -26,7 +26,7 @@ return dayson.amount
 
 //Function to load next payout
 async function loadPayout() {
-let twourl = "https://api.kiezelpay.com/api/merchant/summary?key="  + "APIKEY"
+let twourl = "https://api.kiezelpay.com/api/merchant/summary?key="  + APIKEY
 let payreq = new Request(twourl)
 let payjson = await payreq.loadJSON()
 console.log(payjson)
